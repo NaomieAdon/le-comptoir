@@ -28,15 +28,40 @@
     margin-right: 10px;
 }
 
+
+
+
+
+
+
+
+
+/* la création de la navbar */
+
 .menus {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
 }
 
 .menus a {
-    text-decoration: none;
-    color: #181816;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+
+  background: #d6b35c; /* or clair effet */
+  color: #1c1c1c;
 }
+
+.menus a:hover {
+  background: #b8953d; /* or plus sombre */
+  color: white;
+}
+
+
 
 .hero {
     display: flex;
@@ -95,7 +120,7 @@
 
 
 .items-hero a span:hover {
-    background-color: #15f4f8;
+    background-color: #b4b217;
 }
 
 
@@ -113,7 +138,7 @@ h1{
 
 h2 {
     text-align: center;
-    color: #23f90b;
+    color: #0b5b02;
 }
 
 .menu {
@@ -202,7 +227,7 @@ border-radius: 8px;
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(184, 119, 119, 0.1);
 }
 
 .contact-call h2, .contact-news h2 {
@@ -224,14 +249,14 @@ button {
   padding: 12px;
   border: none;
   border-radius: 5px;
-  background-color: #ff6b6b;
+  background-color: #d6b35c;
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #ff4c4c;
+  background-color: #b8953d;
 }
 
 .contact-news p {
@@ -240,19 +265,57 @@ button:hover {
  }
 
 
- .videos {
-  display: flex;             
-  justify-content: space-between; 
-  align-items: flex-start;   
-  gap: 15px;               
+ .intro-carte {
+  font-family: 'Dancing Script', cursive; /* police calligraphique */
+  color: #9c8815; /* doré plus de style */
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 40px;
 }
 
-.video-card {
-  border-radius: 5px;       
-  overflow: hidden;          
+.para-texte {
+    font-family: 'Dancing Script', cursive; 
+  color: #9c8815; 
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 40px;
 }
 
-.video-card iframe {
-  border-radius: 5px;        
-  display: block;            
+
+/* apprentissage de nouvelles balises*/
+
+.separator-dark { 
+  border: none;              
+  height: 3px;               
+  width: 60%;                
+  background-color: #2f4f4f; 
+  border-radius: 2px;        
+  margin: 40px auto;         
+}
+
+footer {
+    font-family: 'Dancing Script', cursive;
+  background-color: #f4f3ed;
+  padding: 40px 20px;
+  text-align: center; 
+}
+
+.footer-content p {
+  margin-bottom: 20px; /* espace entre le texte et les logos */
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
